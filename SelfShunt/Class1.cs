@@ -13,7 +13,7 @@ namespace SelfShunt
 
         private string BaseUri()
         {
-            return string.Empty;
+            return "http//test.laterooms.com";
         }
     }
 }
