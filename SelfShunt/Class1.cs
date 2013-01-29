@@ -3,12 +3,17 @@
 namespace SelfShunt
 {
     [TestFixture]
-    public class TestDeskTopUri()
+    public class TestDeskTopUri
     {
         [Test]
         public void BaseUriIsTestEnvironment()
         {
             Assert.That(BaseUri(), Is.EqualTo("http//test.laterooms.com"));
+        }
+
+        private string BaseUri()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
