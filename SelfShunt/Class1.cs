@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using NUnit.Framework;
 
 namespace SelfShunt
 {
-    public class Class1
+    [TestFixture]
+    public class TestDeskTopUri()
     {
+        [Test]
+        public void BaseUriIsTestEnvironment()
+        {
+            Assert.That(BaseUri(), Is.EqualTo("http//test.laterooms.com"));
+        }
     }
 }
