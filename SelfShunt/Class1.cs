@@ -13,7 +13,7 @@ namespace SelfShunt
 
         private string BaseUri()
         {
-            throw new System.NotImplementedException();
+            return string.Empty;
         }
     }
 }
